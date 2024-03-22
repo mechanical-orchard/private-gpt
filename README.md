@@ -1,5 +1,21 @@
 # 🔒 PrivateGPT 📑
 
+## MO Quick Start (assumes openai)
+* Clone this repo
+* Copy envrc.sample to .envrc and configure the appropriate env vars
+* Install poetry
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+* Pull openai dependencies
+```bash
+poetry install --extras "ui llms-openai embeddings-openai vector-stores-qdrant"
+```
+* Run the app (will serve on [localhost:8001](http://localhost:8001))
+```bash
+ PGPT_PROFILES=openai make run
+```
+
 [![Tests](https://github.com/imartinez/privateGPT/actions/workflows/tests.yml/badge.svg)](https://github.com/imartinez/privateGPT/actions/workflows/tests.yml?query=branch%3Amain)
 [![Website](https://img.shields.io/website?up_message=check%20it&down_message=down&url=https%3A%2F%2Fdocs.privategpt.dev%2F&label=Documentation)](https://docs.privategpt.dev/)
 

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Minimal set of env variables needed to work with openai
+export APP_ENV=
+export OPENAI_API_KEY=
+export OPENAI_MODEL=

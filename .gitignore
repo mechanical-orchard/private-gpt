@@ -2,6 +2,8 @@
 .env
 venv
 
+.envrc
+
 settings-me.yaml
 
 .ruff_cache
